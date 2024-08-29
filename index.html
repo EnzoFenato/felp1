@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="18442.png" type="image/v-icon">
+    <style>
+        body {
+            background-color: #61707e;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-subtitle {
+            color: #38a8bf;
+        }
+
+        .container {
+            margin-top: 40px;
+        }
+
+        .imagem {
+            width: 150px;
+            height: 120px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+    <title>FELP Visto</title>
+</head>
+
+<body>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img class="imagem" src="18442.png" alt="Visto">
+                <p class="text-center m-4"><strong>Para retirar seu visto, basta clicar em qual deseja retirar e apresentar seu email e telefone para a entrada de contato com o mesmo, logo abaixo:</strong></p>
+                <select name="vistos" id="vistos" class="form-control" onchange="emailTelefone()">
+                    <option value="0">Informe o tipo de visto</option>
+                    <option value="1">1 - Americano</option>
+                    <option value="2">2 - Canadense</option>
+                    <option value="3">3 - Europeu</option>
+                </select>
+                <div class="col-2 mt-3">
+                    <label class="d-none" id="ee">Email:</label>
+                    <input type="text" id="email" class="form-control d-none">
+                </div>
+                <div class="col-2 mt-3">
+                    <label class="d-none" id="tt">Telefone:</label>
+                    <input type="text" id="tel" class="form-control d-none">
+                </div>
+                <button class="btn btn-success mt-3 d-none" id="add">Adicionar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
